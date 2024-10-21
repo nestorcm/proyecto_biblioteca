@@ -4,8 +4,7 @@ package com.example.proyecto.models;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.List;
@@ -15,7 +14,10 @@ import java.util.logging.Level;
 
 @Getter
 @Setter
+@Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class Usuarios {
 
     @Id
@@ -66,6 +68,11 @@ public class Usuarios {
     @Column
     @Getter
     @Setter
-    private  int TIPO_USUARIO;
+    private  String TIPO_USUARIO;
+
+    @Column
+    @Getter
+    @Setter
+    private  String CLASE_USUARIO;
 
 }

@@ -5,10 +5,12 @@ import MakeAppointment from './pages/Make_Appointment';
 import Login from './pages/Login';
 import Updatelinks from './pages/Updatelinks';
 import SeeAppointments from './pages/See_Apointments';
+import { AuthProvider } from './AuthContext'; // Importa el contexto
 
 
 function App() {
   return (
+      <AuthProvider>
     <Fragment>
       <Router>
         <Routes>
@@ -20,6 +22,7 @@ function App() {
         </Routes>
       </Router>
     </Fragment>
+      </AuthProvider>
   );
 }
 
