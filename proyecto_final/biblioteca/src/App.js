@@ -5,23 +5,26 @@ import MakeAppointment from './pages/Make_Appointment';
 import Login from './pages/Login';
 import Updatelinks from './pages/Updatelinks';
 import SeeAppointments from './pages/See_Apointments';
-import Report from './pages/Report';
+import Report from "./pages/Report";
+import { AuthProvider } from './AuthContext'; // Importa el contexto
 
 
 function App() {
   return (
-      <Fragment>
-        <Router>
-          <Routes>
-            <Route path='/' exact element={<Home/>} />
-            <Route path='/cita' exact element={<MakeAppointment/>} />
-            <Route path='/ver-citas' exact element={<SeeAppointments/>}/>
-            <Route path='/iniciar-sesion' exact element={<Login/>} />
-            <Route path='/actualizar-links' exact element={<Updatelinks/>} />
-            <Route path='/reporte' exact element={<Report/>}/>
-          </Routes>
-        </Router>
-      </Fragment>
+      <AuthProvider>
+    <Fragment>
+      <Router>
+        <Routes>
+          <Route path='/' exact element={<Home/>} />
+          <Route path='/cita' exact element={<MakeAppointment/>} />
+          <Route path='/ver-citas' exact element={<SeeAppointments/>}/>
+          <Route path='/iniciar-sesion' exact element={<Login/>} />
+          <Route path='/actualizar-links' exact element={<Updatelinks/>} />
+          <Route path='/reporte' exact element={<Report/>} />
+        </Routes>
+      </Router>
+    </Fragment>
+      </AuthProvider>
   );
 }
 
