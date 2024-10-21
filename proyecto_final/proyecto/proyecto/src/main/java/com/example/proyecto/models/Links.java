@@ -13,7 +13,7 @@ public class Links {
     @Id
     @Getter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idASESORIA;
+    private Long idLINKS;
 
     @Column
     @Getter

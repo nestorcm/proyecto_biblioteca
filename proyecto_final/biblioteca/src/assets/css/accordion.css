@@ -1,0 +1,38 @@
+.accordion-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    background-color: #f4f4f4;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title h3 {
+    margin: 0;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 15px;
+    margin: 0;
+}
+
+.accordion-content.open {
+    max-height: 200px; /* Ajusta según el contenido */
+}
