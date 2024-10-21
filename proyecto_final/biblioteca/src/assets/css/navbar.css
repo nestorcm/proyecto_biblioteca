@@ -1,3 +1,13 @@
 .navbar {
     background-color: #f12c37;
+    padding: 0;
   }
+
+.container-fluid {
+    width: 100%; /* Asegurar que el contenedor ocupe el ancho completo */
+}
+
+.logo {
+    height: 60px; /* Ajusta la altura máxima del logo según lo que necesites */
+    width: auto; /* Mantener la proporción del logo */
+}
