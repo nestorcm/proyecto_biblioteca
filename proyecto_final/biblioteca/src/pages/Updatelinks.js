@@ -14,10 +14,10 @@ const Updatelinks = () => {
           <div className="col-12 mb-3">
             <div className="input-group">
               <input
-                type="text"
-                className="form-control"
-                id="inlineFormInputGroupMuseoVirtual"
-                placeholder="Link de museo virtual"
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputGroupMuseoVirtual"
+                  placeholder="Link de museo virtual"
               />
               <button className="btn btn-danger input-group-text">
                 Actualizar
@@ -28,10 +28,10 @@ const Updatelinks = () => {
           <div className="col-12 mb-3">
             <div className="input-group">
               <input
-                type="text"
-                className="form-control"
-                id="inlineFormInputGroupLibros"
-                placeholder="Link de libros recomendados"
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputGroupLibros"
+                  placeholder="Link de libros recomendados"
               />
               <button className="btn btn-danger input-group-text">
                 Actualizar
@@ -42,10 +42,10 @@ const Updatelinks = () => {
           <div className="col-12 mb-3">
             <div className="input-group">
               <input
-                type="text"
-                className="form-control"
-                id="inlineFormInputGroupColecciones"
-                placeholder="Link de colecciones físicas"
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputGroupColecciones"
+                  placeholder="Link de colecciones físicas"
               />
               <button className="btn btn-danger input-group-text">
                 Actualizar
@@ -56,10 +56,10 @@ const Updatelinks = () => {
           <div className="col-12 mb-3">
             <div className="input-group">
               <input
-                type="text"
-                className="form-control"
-                id="inlineFormInputGroupCulturizate"
-                placeholder="Link de culturízate"
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputGroupCulturizate"
+                  placeholder="Link de culturízate"
               />
               <button className="btn btn-danger input-group-text">
                 Actualizar
@@ -67,19 +67,34 @@ const Updatelinks = () => {
             </div>
           </div>
 
-          <div className="col-12">
+          <div className="col-12 mb-3">
             <div className="input-group">
               <input
-                type="text"
-                className="form-control"
-                id="inlineFormInputGroupConocenos"
-                placeholder="Link de conócenos"
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputGroupConocenos"
+                  placeholder="Link de conócenos"
               />
               <button className="btn btn-danger input-group-text">
                 Actualizar
               </button>
             </div>
           </div>
+
+          <div className="col-12 mb-3">
+            <div className="input-group">
+              <input
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputServiciosGenerales"
+                  placeholder="Link de servicios generales"
+              />
+              <button className="btn btn-danger input-group-text">
+                Actualizar
+              </button>
+            </div>
+          </div>
+
         </form>
       </div>
 
