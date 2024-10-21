@@ -11,7 +11,7 @@ const Home = () => {
       <Carousel />
 
       <div className="container text-center my-4">
-        <div className="p mb-3">BIENVENIDO</div>
+        <div className="h3 p mb-3">BIENVENIDO</div>
       </div>
 
       {/* Aquí va los botones */}

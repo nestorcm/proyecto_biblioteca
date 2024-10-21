@@ -1,38 +1,21 @@
-.accordion-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .accordion-item {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #252525; /* Color azul */
+    border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.accordion-title {
-    background-color: #f4f4f4;
-    padding: 15px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.accordion-header {
+    background-color: #979797; /* Color azul */
+    padding: 10px;
+    color: white;
 }
 
-.accordion-title h3 {
-    margin: 0;
+.accordion-button {
+    font-weight: bold;
 }
 
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.accordion-body {
+    background-color: #f9f9f9; /* Color de fondo para el contenido */
 }
 
-.accordion-content p {
-    padding: 15px;
-    margin: 0;
-}
-
-.accordion-content.open {
-    max-height: 200px; /* Ajusta según el contenido */
-}
